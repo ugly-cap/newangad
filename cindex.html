@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="cstyles.css">
+</head>
+<body>
+    <h1 align="center">angadthapa.com.np is under development try contacting us if any urgency</br>
+        you may reach me at 9821894320 whatsapp/cell</h1>
+   
+    <div class="form-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="from_name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="from_email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <p id="status"></p>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("p2ws9BPX0UewR5bjR"); // Replace with your EmailJS user ID
+        })();
+    </script>
+    <script src="cscript.js"></script>
+</body>
+</html>
